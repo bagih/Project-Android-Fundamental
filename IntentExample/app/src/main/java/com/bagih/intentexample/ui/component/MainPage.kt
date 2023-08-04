@@ -11,7 +11,7 @@ import androidx.compose.ui.unit.dp
 import com.bagih.intentexample.R
 
 @Composable
-fun MainPage(onSecondActivityButtonClick: () -> Unit, onInstagramButtonClick: () -> Unit){
+fun MainPage(onSecondActivityButtonClick: () -> Unit, onInstagramButtonClick: () -> Unit, onEmailButtonClick: () -> Unit){
     Column(
         modifier = Modifier.fillMaxSize(),
         horizontalAlignment = Alignment.CenterHorizontally,
@@ -23,6 +23,10 @@ fun MainPage(onSecondActivityButtonClick: () -> Unit, onInstagramButtonClick: ()
         Spacer(modifier = Modifier.height(8.dp))
         Button(onClick = onInstagramButtonClick) {
             Text(text = stringResource(id = R.string.main_page_open_instagram))
+        }
+        Spacer(modifier = Modifier.height(8.dp))
+        Button(onClick = onEmailButtonClick) {
+            Text(text = stringResource(id = R.string.main_page_compose_email))
         }
     }
 }

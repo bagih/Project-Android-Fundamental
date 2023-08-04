@@ -3,4 +3,7 @@
     <string name="second_page_content_text">Welcome from second page</string>
     <string name="goto_second_page_text_button">go to second page</string>
     <string name="main_page_open_instagram">open instagram</string>
+    <string name="main_page_compose_email">compose email</string>
+    <string name="email_subject">this is email subject</string>
+    <string name="text_email">this is email text</string>
 </resources>
